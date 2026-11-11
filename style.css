@@ -1,0 +1,26 @@
+#rectangle02 {
+            width: 350px;
+            height: 200px;
+            background-color: rgb(255, 207, 13);
+            outline: 5px solid rgb(249, 67, 67);
+            position: relative;
+            animation: moveRectangle 2s infinite alternate, spin 8s infinite linear;
+   
+}
+        @keyframes moveRectangle {
+            0% {
+                translate: 0 0;
+            }
+            100% {
+                translate: 200px 0;
+            }
+        }
+            @keyframes spin {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
